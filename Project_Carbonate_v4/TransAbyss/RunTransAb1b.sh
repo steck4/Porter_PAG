@@ -7,7 +7,7 @@
 cd PWDHERE/TransAbyss
 
 module load transabyss/2.0.1
-module load igraph/python/0.7.1
+module load igraph
 module load blat
 #run
 reads1=PWDHERE/input_files/left-norm.fq

@@ -1,7 +1,7 @@
 #PBS -k oe 
 #PBS -m abe
 #PBS -M 
-#PBS -N RunTrinotate
+#PBS -N RunHmmer
 #PBS -l nodes=1:ppn=2,vmem=100gb,walltime=24:00:00
 
 ##Move to correct WD

@@ -1,3 +1,5 @@
+Script edited to remove igraph subfolders 1/4/2020
+
 This should run without too much customization.
 
 First run the Run* scripts as described in the main README and then use ./Combine.sh to combine and finalize the set.

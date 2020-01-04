@@ -1,8 +1,8 @@
 For paired, You will need to combine all your read files into left.fq and right.fq, as these are going to be the input files for the assemblers.  These can be trimmed reads, or if you feel confident (run fastqc), untrimmed reads.
 
 An easy way to do this is to put all the files in this input_files directory, then run:
-cat *_1.fq >> left.fq
-cat *_2.fq >> right.fq
+cat *_1.fastq >> left.fq
+cat *_2.fastq >> right.fq
 
 (assuming you left reads are all files that end in _1.fq, etc.)
 

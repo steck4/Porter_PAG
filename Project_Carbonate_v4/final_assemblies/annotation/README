@@ -5,7 +5,6 @@ README
 scripts/  
 transcripts.aa  
 transcripts.fa  
-Trinotate.sqlite
 
 This is how you will know the previous step was completed fully.  Run the following if you see these files:
 

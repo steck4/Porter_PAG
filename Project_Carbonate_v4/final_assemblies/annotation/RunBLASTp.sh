@@ -2,7 +2,7 @@
 #PBS -m abe
 #PBS -M 
 #PBS -N RunBLAST
-#PBS -l nodes=1:ppn=2,vmem=100gb,walltime=24:00:00
+#PBS -l nodes=1:ppn=2,vmem=100gb,walltime=96:00:00
 
 ##Move to correct WD
 cd PWDHERE/final_assemblies/annotation

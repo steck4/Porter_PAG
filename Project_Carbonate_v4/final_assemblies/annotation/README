@@ -1,4 +1,10 @@
-You should see the following files in the annotation folder:
+Once RunEviGene.sh has successfully completed, you can begin to annotate your transcriptomes by running the following scripts.
+1. Annotate.sh (or RunAnnotate.sh)
+2. RunBLAST1.sh RunBLAST1b.sh
+3. RunHmmer.sh
+4. RunTrinotate.sh
+
+Before you begin annotation, you should see the following files in the annotation folder:
 Annotate.sh  
 combined.mainalt.tab  
 README  
@@ -14,6 +20,9 @@ where NAME_PREFIX is the final naming prefix you'd like for all your transcripts
 
 i.e. ./Annotate.sh -p genenames
 
+*note* this will take some time depending on how large your assemblies are, 
+if this operation times out before completing, edit Annotate.sh to use the NAME_PREFIX of your choice, and submit RunAnnotate.sh to the queue
+
 At this point you will have an initialized Trinotate database.  You will now have the following files:
 combined.mainalt.tab      	a table listing the longest form (first column) and all alternate forms (remaining columns)
 genes_to_transcripts.tsv  	a table listing the final name of the gene and the different forms from the table above 
@@ -28,7 +37,8 @@ transcripts.main.renamed.aa  	the subset above, but with the final gene name add
 
 Trinotate.sqlite		the initialized annoatation database to be used ith Trinotate
 
-You should continue with the Trinotate steps, using the transcripts.main.fa and transcripts.main.aa files.  DO NOT continue with the *main.renamed* files, as these will not import into the database correctly.
-
+You should continue with the Trinotate steps, using the transcripts.main.fa and transcripts.main.aa files.  
+DO NOT continue with the *main.renamed* files, as these will not import into the database correctly.
 
 Trinotate manual: https://github.com/Trinotate/Trinotate.github.io/wiki
+

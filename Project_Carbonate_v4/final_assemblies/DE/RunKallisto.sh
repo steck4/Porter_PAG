@@ -1,3 +1,9 @@
+#PBS -k oe
+#PBS -m abe
+#PBS -M 
+#PBS -N RunEviGene
+#PBS -l nodes=1:ppn=4,vmem=100gb,walltime=00:12:00:00
+
 #load modules
 module load r 
 module load bioconductor 

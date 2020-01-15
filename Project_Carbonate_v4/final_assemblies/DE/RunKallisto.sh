@@ -1,5 +1,5 @@
 #load modules
-module load R 
+module load r 
 module load bioconductor 
 module load trinityrnaseq/2.6.6 
 module load kallisto

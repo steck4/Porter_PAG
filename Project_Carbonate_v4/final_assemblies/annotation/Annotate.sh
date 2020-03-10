@@ -17,7 +17,7 @@ done
 module load trinotate
 
 cp /N/soft/rhel7/trinotate/3.1.1/Trinotate.sqlite ./
-chmod -rxw ./scripts/*
+chmod +rxw ./scripts/*
 scripts/make_genes_to_transcripts.ba -i *.mainalt.tab -g $prefix
 scripts/convert_aa.ba -t genes_to_transcripts.tsv -f transcripts.main.aa
 Trinotate Trinotate.sqlite init --gene_trans_map genes_to_transcripts.tsv --transcript_fasta transcripts.main.fa --transdecoder_pep transcripts.reformated.aa 

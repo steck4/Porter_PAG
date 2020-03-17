@@ -4,6 +4,9 @@
 #PBS -N RunEviGene
 #PBS -l nodes=1:ppn=4,vmem=100gb,walltime=00:12:00:00
 
+#if you have more than one sample, replicate line 23 with new sample name
+species=SAMPLE_ID
+
 #load modules
 module load r 
 module load bioconductor 
@@ -17,6 +20,6 @@ cd PDWHERE/final_assemblies/DE
 kallisto index -i combined_kal_index ../okayset/combined.okay.fa
 
 #Run kallisto quantification for single samples
-kallisto quant -i combined_kal_index -o SAMPLE_kallisto ../../input_files/left.fq ../../input_files/right.fq
+kallisto quant -i combined_kal_index -o ${species}_kallisto ../../input_files/${species}.fq ../../input_files/${species}.fq
 
 

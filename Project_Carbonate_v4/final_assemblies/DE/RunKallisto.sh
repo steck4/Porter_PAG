@@ -13,7 +13,7 @@ module load bioconductor
 module load trinityrnaseq/2.6.6 
 module load kallisto
 
-cd PDWHERE/final_assemblies/DE
+cd PWDHERE/final_assemblies/DE
 #kallisto manual at - https://pachterlab.github.io/kallisto/manual
 
 #make an index of the transcriptome with kallisto

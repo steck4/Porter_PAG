@@ -1,7 +1,12 @@
-#PBS -k oe
-#PBS -m abe
-#PBS -M 
-#PBS -N RunEviGene
+#!/bin/bash
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=
+#SBATCH -J RunKallisto
+#SBATCH -p general
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=4
+#SBATCH --time=00:20:00
+
 #PBS -l nodes=1:ppn=4,vmem=100gb,walltime=00:12:00:00
 
 #if you have more than one sample, replicate line 23 with new sample name

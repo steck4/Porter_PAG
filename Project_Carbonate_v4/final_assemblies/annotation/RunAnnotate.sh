@@ -1,8 +1,11 @@
-#PBS -k oe 
-#PBS -m abe
-#PBS -M 
-#PBS -N RunAnnotate
-#PBS -l nodes=1:ppn=1,vmem=10gb,walltime=1:00:00
+#!/bin/bash
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=
+#SBATCH -J RunAnnotate
+#SBATCH -p general
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --time=1:00:00
 
 ##Move to correct WD
 cd PWDHERE/final_assemblies/annotation

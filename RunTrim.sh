@@ -1,16 +1,19 @@
 #!/bin/bash
-#PBS -k oe
-#PBS -m abe
-#PBS -M 
-#PBS -N RunTrim
-#PBS -l nodes=1:ppn=2,vmem=100gb,walltime=4:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=user@hawaii.edu
+#SBATCH -J RunTrim
+#SBATCH -p general
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=8
+#SBATCH --time=14:00:00
+
 #Edit the directories RAW and OUT, and the filename as needed
 #execute BestPractices trimmomatic procedure
 #(http://rnaseq-workshop-2017.readthedocs.io/en/latest/quality-trimming.html)
 
 #Edit Project Name
-raw=/N/slate/toiwan/metat/rawreads/novogene
-out=/N/slate/toiwan/metat/cleanReads
+raw=PWDHERE
+out=PWDHERE/cleanReads
 echo $raw
 echo $out
 

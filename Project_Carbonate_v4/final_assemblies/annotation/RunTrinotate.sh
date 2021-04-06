@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=user@hawaii.edu
+#SBATCH --mail-user=
 #SBATCH -J RunAnnotation
 #SBATCH -p general
 #SBATCH --nodes=1

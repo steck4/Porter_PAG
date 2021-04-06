@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=
-#SBATCH -J RunSRA
+#SBATCH -J RunNormalize
 #SBATCH -p general
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=16

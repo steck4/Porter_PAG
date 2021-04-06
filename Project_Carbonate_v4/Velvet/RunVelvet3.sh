@@ -1,8 +1,11 @@
-#PBS -k oe 
-#PBS -m abe
-#PBS -M 
-#PBS -N RunVelvet3
-#PBS -l nodes=1:ppn=2,vmem=200gb,walltime=3:00:00
+#!/bin/bash
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=
+#SBATCH -J RunVelvet3
+#SBATCH -p general
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=2
+#SBATCH --time=4:00:00
 
 ##Move to correct WD
 cd PWDHERE/Velvet

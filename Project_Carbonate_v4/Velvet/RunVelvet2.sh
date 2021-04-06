@@ -7,8 +7,6 @@
 #SBATCH --ntasks-per-node=2
 #SBATCH --time=4:00:00
 
-#PBS -l nodes=1:ppn=2,vmem=200gb,walltime=3:00:00
-
 ##Move to correct WD
 cd PWDHERE/Velvet
 

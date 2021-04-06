@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=user@hawaii.edu
-#SBATCH -J RunSRA
+#SBATCH --mail-user=
+#SBATCH -J RunEVI
 #SBATCH -p general
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=4

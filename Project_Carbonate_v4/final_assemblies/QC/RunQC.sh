@@ -1,7 +1,12 @@
-#PBS -k oe
-#PBS -m abe
-#PBS -M 
-#PBS -N RunQC
+#!/bin/bash
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=
+#SBATCH -J RunSRA
+#SBATCH -p general
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --time=00:12:00
+
 #PBS -l nodes=1:ppn=1,vmem=10gb,walltime=00:12:00:00
 
 cd PWDHERE/final_assemblies/QC

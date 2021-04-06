@@ -1,7 +1,11 @@
-#PBS -N TransAb1
-#PBS -m bea
-#PBS -M 
-#PBS -l nodes=1:ppn=10,walltime=12:00:00,vmem=100gb
+#!/bin/bash
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=
+#SBATCH -J RunTransAb1
+#SBATCH -p general
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=10
+#SBATCH --time=12:00:00
 
 #set wd
 cd PWDHERE/TransAbyss

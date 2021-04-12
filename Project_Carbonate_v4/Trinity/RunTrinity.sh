@@ -7,6 +7,7 @@
 #SBATCH --ntasks-per-node=16
 #SBATCH --time=72:00:00
 
+module load python
 module load trinityrnaseq/2.6.6
 module load bowtie2/intel/2.3.2
 
